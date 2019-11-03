@@ -5,7 +5,7 @@
   "repository": "https://github.com/electerious/Ackee",
   "success_url": "/",
   "addons": [
-    "jawsdb"
+    "mongolab"
   ],
   "env": {
     "ACKEE_USERNAME": {
