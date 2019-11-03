@@ -10,8 +10,8 @@ const isDemo = require('./utils/isDemo')
 const fillDatabase = require('./utils/fillDatabase')
 const stripUrlAuth = require('./utils/stripUrlAuth')
 
-const port = process.env.ACKEE_PORT || 3000
-const dbUrl = process.env.ACKEE_MONGODB
+const port = process.env.ACKEE_PORT || process.env.PORT || 3000
+const dbUrl = process.env.ACKEE_MONGODB || process.env.JAWSDB_URL
 const serverUrl = `http://localhost:${ port }`
 
 mongoose.set('useFindAndModify', false)
